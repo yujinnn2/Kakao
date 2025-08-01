@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kakao</title>
     <link rel="stylesheet" href="assets/scss/main.css">
+    <!-- slick CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
+
 <body>
     <!-- Header 헤더 -->
-    <header class="inner_header">
-         <div class="logo">
+    <!-- <header class="inner_header">
+        <div class="logo">
             <img src="assets/images/logo.PNG" alt="kakao 로고">
         </div>
         <nav class="gnb">
@@ -21,35 +26,76 @@
                 <li><a href="#">투자정보</a></li>
             </ul>
         </nav>
-       <div class="icon">
-        <div class="search"><img src="assets/images/icn_search.png" alt="돋보기 아이콘"></div>
-        <div class="language"><img src="assets/images/icn_language.png" alt="언어 변환 아이콘"></div>
-        <div class="dark"><img src="assets/images/icn_dark.png" alt="다크모드 아이콘"></div>
-        <div class="hbg"><img src="assets/" alt=""></div>
-       </div>
-    </header>
+        <div class="icon">
+            <div class="search"><img src="assets/images/icn_search.png" alt="돋보기 아이콘"></div>
+            <div class="language"><img src="assets/images/icn_language.png" alt="언어 변환 아이콘"></div>
+            <div class="dark"><img src="assets/images/icn_dark.png" alt="다크모드 아이콘"></div>
+            <div class="hbg"><img src="assets/" alt=""></div>
+        </div>
+    </header> -->
 
     <!-- section01 -->
-     <section class="section01">
-        <div class="area_visual">
-            <video autoplay muted loop playsinline class="area_visual">
-                <source src="assets/videos/d6b781eb019600001.mp4" type="video/mp4 "/>
-            </video>
-        </div>
-        <div class="area_widget">
-            <div class="inner_widget_fist">
-                <img src="assets/banner01.webp" alt="" class="banner01">
-            </div>
-            <div class="inner_widget_second"></div>
-            <div class="inner_widget_third"></div>
-        </div>
-     </section>
+    <section class="section01">
+        <div class="d-flex">
+            <div class="area_visual">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/videos/d6b781eb019600001.mp4" type="video/mp4" />
+                </video>
 
-     <!-- section02 섹션2 -->
-      <section class="section02">
+                <div class="wrap_text">
+                    <strong>다시 한번 세상을 놀랍게!</strong>
+                </div>
+
+                <div class="inner_btn">
+                    <a href="#none">
+                        자세히 알아보기
+                        <svg data-v-6984c41e="" data-v-85d56d7e="" xmlns="http://www.w3.org/2000/svg" width="64"
+                            height="64" viewBox="0 0 64 64" fill="none" class="btn_arr_big">
+                            <circle data-v-6984c41e="" cx="32" cy="31.9961" r="32" fill="black"></circle>
+                            <path data-v-6984c41e=""
+                                d="M34.9292 25.5325L33.515 26.9467L38.1748 31.6065L23 31.6074V33.6015L38.1748 33.6005L33.515 38.2604L34.9292 39.6746L42.0002 32.6035L34.9292 25.5325Z"
+                                fill="white"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="area_widget">
+                <!-- widget01 위젯1 -->
+                <div class="inner_widget_fist">
+                    <img src="assets/banner01.webp" alt="" class="banner01" />
+                </div>
+                <!-- widget02 위젯2 -->
+                <div class="inner_widget_second">
+                    <div class="widget_slider">
+                        <div class="slide_card">
+                            <span class="label">ESG보고서</span>
+                            <h4>지속가능한 내일을 위한<br />약속과 책임</h4>
+                            <p class="hashtags">#카카오ESG #지속가능경영</p>
+                        </div>
+                        <div class="slide_card">
+                            <span class="label">기술 리포트</span>
+                            <h4>사람을 이해하는 기술의 여정</h4>
+                            <p class="hashtags">#AI #음성인식 #컨텍스트추론</p>
+                        </div>
+                        <div class="slide_card">
+                            <span class="label">기술 이야기</span>
+                            <h4>AI 기술로 변화하는 일상</h4>
+                            <p class="hashtags">#AI #생활기술</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_widget_third"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section02 섹션2 -->
+    <!-- <section class="section02">
         <div class="cont_main">
             <h3 class="title_story">
-                <span>카카오와 카카오 그룹이 축적해 온 이야기들</span> 
+                <span>카카오와 카카오 그룹이 축적해 온 이야기들</span>
                 <button>
                     <img src="assets/images/icn_pause.svg" alt="정지 버튼" class="icn_pause">
                 </button>
@@ -65,10 +111,10 @@
             <li class="item_story type_normal--"></li>
         </ul>
         <ul class="list_story"></ul>
-    </section>
+    </section> -->
 
     <!-- sectino03 섹션3 -->
-    <section class="section03">
+    <!-- <section class="section03">
         <div class="cont_main">
             <div class="title_cont">
                 <span>더 나은 세상을 만드는 카카오 서비스</span>
@@ -79,67 +125,103 @@
                 <li class="box_service">
                     <strong>커뮤니케이션</strong>
                     <div class="item_service">
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/cc08d9e2018e00001.png" alt=""></a>
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/2666427d019500001.png" alt=""></a>
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/f6999d4b019600001.png" alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/cc08d9e2018e00001.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/2666427d019500001.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/f6999d4b019600001.png"
+                                alt=""></a>
                         <a href="#"><img src="assets/images/icn_plus.svg" alt=""></a>
                     </div>
                 </li>
                 <li class="box_service">
                     <strong>비즈니스</strong>
                     <div class="item_service">
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/cc08d9e2018e00001.png" alt=""></a>
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9469d4a018c00001.png" alt=""></a>
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c946aa55018c00001.png" alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/cc08d9e2018e00001.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9469d4a018c00001.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c946aa55018c00001.png"
+                                alt=""></a>
                         <a href="#"><img src="assets/images/icn_plus.svg" alt=""></a>
                     </div>
                 </li>
                 <li class="box_service">
                     <strong>일상편의</strong>
                     <div class="item_service">
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c947f606018c00001.png" alt=""></a>
-                        <a href="#"><img src="	https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94804d8018c00001.png" alt=""></a>
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9481249018c00001.png" alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c947f606018c00001.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="	https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94804d8018c00001.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9481249018c00001.png"
+                                alt=""></a>
                         <a href="#"><img src="assets/images/icn_plus.svg" alt=""></a>
                     </div>
                 </li>
                 <li class="box_service">
                     <strong>쇼핑</strong>
                     <div class="item_service">
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/cc08d9e2018e00001.png" alt=""></a>
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/2666427d019500001.png" alt=""></a>
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/f6999d4b019600001.png" alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/cc08d9e2018e00001.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/2666427d019500001.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/f6999d4b019600001.png"
+                                alt=""></a>
                         <a href="#"><img src="assets/images/icn_plus.svg" alt=""></a>
                     </div>
                 </li>
                 <li class="box_service">
                     <strong>엔터테인먼트</strong>
                     <div class="item_service">
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/cc08d9e2018e00001.png" alt=""></a>
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/2666427d019500001.png" alt=""></a>
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/f6999d4b019600001.png" alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/cc08d9e2018e00001.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/2666427d019500001.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/f6999d4b019600001.png"
+                                alt=""></a>
                         <a href="#"><img src="assets/images/icn_plus.svg" alt=""></a>
                     </div>
                 </li>
                 <li class="box_service">
                     <strong>소셜임팩트</strong>
                     <div class="item_service">
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/cc08d9e2018e00001.png" alt=""></a>
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/2666427d019500001.png" alt=""></a>
-                        <a href="#"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/f6999d4b019600001.png" alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/cc08d9e2018e00001.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/2666427d019500001.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/f6999d4b019600001.png"
+                                alt=""></a>
                         <a href="#"><img src="assets/images/icn_plus.svg" alt=""></a>
                     </div>
                 </li>
-                
+
             </ul>
         </div>
         <div class="wrap_btn">
-            <a href="#">서비스 전체보기</a>
+            <a href="#">서비스 전체보기<img src="assets/images/btn_next.PNG" alt="다음 버튼" class="btn_next"></a>
         </div>
-    </section>
+    </section> -->
 
     <!-- section04 섹션4-->
-    <section class="section04"> 
+    <!-- <section class="section04">
         <div class="cont_main">
             <div class="title_cont">
                 <span>오늘의 뉴스</span>
@@ -147,16 +229,44 @@
         </div>
         <div class="inner_main">
             <div class="wrap_top">
-                <div class="wrap_card"></div>
+                <div class="wrap_card">
+                    <span class="info_cate">
+                        <img src="assets/images/icn_announce.webp" alt="확성기 아이콘" class="icon_announce">
+                    </span>
+                    <span class="text_cate">
+                        <span>보도자료</span>
+                    </span>
+                    <span class="date_cate">
+                        <span>2025.07.31</span>
+                    </span>
+                </div>
                 <div class="wrap_card"></div>
                 <div class="wrap_card"></div>
             </div>
             <div class="wrap_bottom"></div>
         </div>
-    </section>
+    </section> -->
 
 
 
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.widget_slider').slick({
+                slidesToShow: 1,
+                arrows: false,
+                dots: true,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 4000
+            });
+        });
+    </script>
 </body>
+
 </html>
